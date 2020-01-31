@@ -1,16 +1,26 @@
 {
   "name": "project",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
-  },
+  "version": "1.0.0",
+  "description": "CSC130 Scrum Project",
+  "main": "index.js",
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1",
-    "pug": "2.0.0-beta11"
-  }
+    "express": "latest",
+    "cookie-parser": "latest",
+    "body-parser": "latest",
+    "pug": "latest"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/searjasub/CSC130-C1PH3R.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/searjasub/CSC130-C1PH3R/issues"
+  },
+  "homepage": "https://github.com/searjasub/CSC130-C1PH3R#readme"
 }
