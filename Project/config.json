@@ -1,0 +1,16 @@
+{
+  "menu": [
+    [
+      "Logout",
+      "/logout"
+    ],
+    [
+      "Profile",
+      "/edit"
+    ],
+    [
+      "Home",
+      "/"
+    ]
+  ]
+}
