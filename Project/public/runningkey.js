@@ -2,6 +2,8 @@ var activeButton = 0;
 var list = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 function swap(str, pStr) {
+    str.ToUpperCase();
+    pStr.ToUpperCase();
     var i = 0;
     var err = 0;
     var val = 0;
