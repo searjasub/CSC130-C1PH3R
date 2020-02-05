@@ -3,13 +3,16 @@ html
   head
     link(href='style.css', rel='stylesheet')
     header
-      nav
-        ul
-          each item in config.menu
-            div(class="header")
-              div(class="header-right")
-                a(href=item[1])
-                  div(class='menu_item')
-                    li(id=item[0]) #{item[0]}
+      .nav
+        .container2
+          ul.main-menu
+            li
+              a(href=config.menu[1][1]) #{config.menu[1][0]}
+            li
+              a(href=config.menu[0][1]) #{config.menu[0][0]}
+              ul.drop-menu
+                each item in config.ciphers
+                  li
+                    a(href=item[1]) #{item[0]}
   body
     block content
