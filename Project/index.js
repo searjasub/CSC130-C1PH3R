@@ -20,6 +20,9 @@ const asyncRoute = route => (req, res, next = console.error) =>
     Promise.resolve(route(req, res)).catch(next);
 
 app.get('/', asyncRoute(routes.home));
+app.get('/game', asyncRoute(routes.game));
+app.get('/ciphers', asyncRoute(routes.ciphers));
+app.get('/atbash', asyncRoute(routes.atbash));
 
 app.listen(3000);
 
