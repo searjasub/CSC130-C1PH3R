@@ -1,16 +1,30 @@
 {
   "menu": [
     [
-      "Logout",
-      "/logout"
+      "Ciphers",
+      "/ciphers "
     ],
     [
-      "Profile",
-      "/edit"
+      "Game",
+      "/game"
+    ]
+  ],
+  "ciphers": [
+    [
+      "Atbash",
+      "/atbash"
     ],
     [
-      "Home",
-      "/"
+      "Running Key",
+      "/running-key"
+    ],
+    [
+      "Caesar Cipher",
+      "/caesar"
+    ],
+    [
+      "Playfare",
+      "/playfare"
     ]
   ]
 }
