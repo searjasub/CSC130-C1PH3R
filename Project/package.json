@@ -4,10 +4,10 @@
   "description": "CSC130 Scrum Project",
   "main": "index.js",
   "dependencies": {
-    "express": "latest",
-    "cookie-parser": "latest",
-    "body-parser": "latest",
-    "pug": "latest"
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
   },
   "devDependencies": {},
   "scripts": {
