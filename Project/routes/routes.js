@@ -1,10 +1,16 @@
 const config = require('../config');
 
-exports.decryptAtbash = async (req, req) => {
+exports.decryptAtbash = async (req, res) => {
     let info = new Info({
-        encrypt : req.body.en
-    })
+        decrypt : req.body.decrypt
+    });
 }
+
+exports.decryptRunning = async (req, res) => {
+    let info = new Info({
+        decrypt: req.body.decrypt
+    });
+} 
 
 exports.home = async (req, res) => {
     res.render('home', {
