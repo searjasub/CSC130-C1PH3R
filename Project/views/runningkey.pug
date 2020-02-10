@@ -2,7 +2,7 @@ extends layout
 
 block content
     div(class="container-form")
-        h2(class="title") Atbash Cipher
+        h2(class="title") Running Key
         form(id="form" method="post" action="/encrypt")
             div(class="form-group")
                 input(type="text" id="decipher_caesar_text" autocomplete="off" name="encrypt")
@@ -12,6 +12,6 @@ block content
                 input(class="button" value="v Encript v" type="submit")
                 input(class="button" value="^ Decrypt ^" type="submit" formaction="/decrypt-atbash")
             div(class="form-group")
-                input(type="text" id="bottom-cipher" name="decipher")
+                input(type="text" id="bottom-cipher" name="decrypt")
                 label(for="bottom-cipher" class="control-label") Cipher Text
                 i(class="bar")

@@ -24,6 +24,7 @@ app.get('/atbash', asyncRoute(routes.atbash));
 app.get('/caesar', asyncRoute(routes.caesar));
 
 app.post('/decrypt-atbash', urlencodedParser, asyncRoute(routes.decryptAtbash));
+app.post('/decrypt-running', urlencodedParser, asyncRoute(routes.decryptRunning));
 
 
 app.listen(3000);
