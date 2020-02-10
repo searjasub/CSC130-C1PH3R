@@ -1,5 +1,11 @@
 const config = require('../config');
 
+exports.decryptAtbash = async (req, req) => {
+    let info = new Info({
+        encrypt : req.body.en
+    })
+}
+
 exports.home = async (req, res) => {
     res.render('home', {
         title : 'C1PH3RS',
