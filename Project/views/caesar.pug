@@ -1,28 +1,17 @@
-extends layout 
+extends layout
 
 block content
-
-  div(id="container")
-    label(for="title") Caesar Cipher!!
-    br 
-    br
-    div(class="input")    
-      form(id="form")
-        label(for="chypher") Text:
-        br
-        input(type="text" id="chypher") 
-        br 
-        br 
-        label(for="offset") Offset:
-        br 
-        input(type="number" value="3" id="offset")
-        br 
-        br 
-        label(for="finish") Finish:
-        br 
-        input(type="text" id="finish")  
-        br 
-        br
-        button(id="help") Help!
-
-        script(src="/caesar.js")
+    div(class="container-form")
+        h2(class="title") Atbash Cipher
+        form(id="form" method="post" action="/encrypt")
+            div(class="form-group")
+                input(type="text" id="decipher_caesar_text" autocomplete="off" name="encrypt")
+                label(for="decipher_caesar_text" class="control-label") Plain Text
+                i(class="bar")
+            div(class="button-container")
+                input(class="button" value="v Encript v" type="submit")
+                input(class="button" value="^ Decrypt ^" type="submit" formaction="/decrypt-atbash")
+            div(class="form-group")
+                input(type="text" id="bottom-cipher" name="decipher")
+                label(for="bottom-cipher" class="control-label") Cipher Text
+                i(class="bar")
