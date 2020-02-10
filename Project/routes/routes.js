@@ -27,3 +27,10 @@ exports.atbash = async (req, res) => {
         "config" : config
     })
 };
+
+exports.caesar = async (req, res) => {
+    res.render('caesar', {
+        title: 'Caesar Cipher',
+        "config" : config
+    })
+};

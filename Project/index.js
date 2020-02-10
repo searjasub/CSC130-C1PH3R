@@ -23,6 +23,7 @@ app.get('/', asyncRoute(routes.home));
 app.get('/game', asyncRoute(routes.game));
 app.get('/ciphers', asyncRoute(routes.ciphers));
 app.get('/atbash', asyncRoute(routes.atbash));
+app.get('/caesar', asyncRoute(routes.caesar));
 
 app.listen(3000);
 
