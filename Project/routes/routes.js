@@ -46,4 +46,12 @@ exports.caesar = async (req, res) => {
         title: 'Caesar Cipher',
         "config" : config
     })
+    
+};
+
+exports.runningkey = async (req, res) => {
+    res.render('runningkey', {
+        title: 'Running Key Cipher',
+        "config" : config
+    })
 };
