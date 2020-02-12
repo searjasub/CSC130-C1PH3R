@@ -3,7 +3,13 @@ const config = require('../config');
 
 exports.decryptAtbash = async (req, res) => {
     let info = new Info({
-        decrypt : req.body.decrypt
+        decrypt: req.body.decrypt
+    });
+}
+
+exports.encryptRunning = async (req, res) => {
+    let info = new Info({
+        encrypt: req.body.encrypt
     });
 }
 

@@ -3,14 +3,14 @@ extends layout
 block content
     div(class="container-form")
         h2(class="title") Running Key
-        form(id="form" method="post" action="/encrypt")
+        form(id="form" method="post" action="/encrypt-running")
             div(class="form-group")
                 input(type="text" id="decipher_caesar_text" autocomplete="off" name="encrypt")
                 label(for="decipher_caesar_text" class="control-label") Plain Text
                 i(class="bar")
             div(class="button-container")
                 input(class="button" value="v Encrypt v" type="submit")
-                input(class="button" value="^ Decrypt ^" type="submit" formaction="/decrypt-atbash")
+                input(class="button" value="^ Decrypt ^" type="submit" formaction="/decrypt-running")
             div(class="form-group")
                 input(type="text" id="bottom-cipher" name="decrypt")
                 label(for="bottom-cipher" class="control-label") Cipher Text
