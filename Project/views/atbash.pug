@@ -6,6 +6,7 @@ block content
         form(id="form" method="post" action="/encrypt")
             div(class="form-group")
                 input(type="text" id="decipher_caesar_text" autocomplete="off" name="encrypt")
+<<<<<<< HEAD
                 if info && info.encrypt
                     decipher_caesar_text.value #{info.encrypt}
                 label(for="decipher_caesar_text" class="control-label") Plain Text
@@ -17,5 +18,14 @@ block content
                 input(type="text" id="bottom-cipher" name="decrypt")
                 if info && info.decrypt
                     bottom-cipher.value #{info.decrypt}
+=======
+                label(for="decipher_caesar_text" class="control-label") Plain Text
+                i(class="bar")
+            div(class="button-container")
+                input(class="button" value="v Encript v" type="submit")
+                input(class="button" value="^ Decrypt ^" type="submit" formaction="/decrypt-atbash")
+            div(class="form-group")
+                input(type="text" id="bottom-cipher" name="decipher")
+>>>>>>> 7f69d80847d67ff0fe8b4caafb44d9d3af0e5707
                 label(for="bottom-cipher" class="control-label") Cipher Text
                 i(class="bar")

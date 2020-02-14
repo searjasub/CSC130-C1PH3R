@@ -1,6 +1,7 @@
 const config = require('../config');
 const atbash = require('../public/atbash.js')
 
+<<<<<<< HEAD
 exports.encryptAtbash = async(req, res) => {
     let info = {
         encrypt: req.body.encrypt,
@@ -31,6 +32,15 @@ exports.decryptRunning = async(req, res) => {
 }
 
 exports.home = async(req, res) => {
+=======
+exports.decryptAtbash = async (req, req) => {
+    let info = new Info({
+        encrypt : req.body.en
+    })
+}
+
+exports.home = async (req, res) => {
+>>>>>>> 7f69d80847d67ff0fe8b4caafb44d9d3af0e5707
     res.render('home', {
         title: 'C1PH3RS',
         "config": config
