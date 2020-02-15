@@ -3,7 +3,13 @@ const config = require('../config');
 
 exports.decryptAtbash = async (req, res) => {
     let info = new Info({
-        decrypt : req.body.decrypt
+        decrypt: req.body.decrypt
+    });
+}
+
+exports.encryptRunning = async (req, res) => {
+    let info = new Info({
+        encrypt: req.body.encrypt
     });
 }
 
@@ -44,6 +50,14 @@ exports.atbash = async(req, res) => {
 exports.caesar = async (req, res) => {
     res.render('caesar', {
         title: 'Caesar Cipher',
+        "config" : config
+    })
+    
+};
+
+exports.runningkey = async (req, res) => {
+    res.render('runningkey', {
+        title: 'Running Key Cipher',
         "config" : config
     })
 };
