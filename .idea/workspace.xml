@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="284637d6-3555-4162-8f76-a81f55659284" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Project/public/playfair.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -9,7 +10,19 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1XpgwuoW0q1X8nDtwRihsDXxH2Q" />
@@ -26,6 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -39,6 +53,7 @@
       <updated>1580503992805</updated>
       <workItem from="1580503994822" duration="2421000" />
       <workItem from="1580936615880" duration="20000" />
+      <workItem from="1582148594319" duration="112000" />
     </task>
     <task id="LOCAL-00001" summary="Setup">
       <created>1580504073284</created>
@@ -82,6 +97,22 @@
     </state>
     <state x="592" y="218" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580936582501" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580506307539" />
+    <state width="1515" height="190" key="GridCell.Tab.0.bottom" timestamp="1582148683451">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="190" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582148683451" />
+    <state width="1515" height="190" key="GridCell.Tab.0.center" timestamp="1582148683451">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="190" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582148683451" />
+    <state width="1515" height="190" key="GridCell.Tab.0.left" timestamp="1582148683451">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="190" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582148683451" />
+    <state width="1515" height="190" key="GridCell.Tab.0.right" timestamp="1582148683451">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="190" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582148683451" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1580504990040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
