@@ -11,13 +11,13 @@ exports.encryptRunning = async (req, res) => {
     let info = new Info({
         encrypt: req.body.encrypt
     });
-}
+};
 
 exports.decryptRunning = async (req, res) => {
     let info = new Info({
         decrypt: req.body.decrypt
     });
-} 
+};
 
 exports.home = async (req, res) => {
     res.render('home', {
