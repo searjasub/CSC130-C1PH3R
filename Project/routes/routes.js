@@ -26,17 +26,16 @@ exports.decryptAtbash = async(req, res) => {
 }
 
 exports.encryptRunning = async(req, res) => {
-    let info = new Info({
+    let info = {
         encrypt: req.body.encrypt
-    });
+    }
 };
 
 
 exports.decryptRunning = async (req, res) => {
     let info = {
         decrypt: req.body.decrypt
-    };
-
+    }
 };
 
 exports.home = async(req, res) => {
