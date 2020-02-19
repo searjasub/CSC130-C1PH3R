@@ -23,6 +23,7 @@ app.get('/ciphers', asyncRoute(routes.ciphers));
 app.get('/atbash', asyncRoute(routes.atbash));
 app.get('/caesar', asyncRoute(routes.caesar));
 app.get('/runningkey', asyncRoute(routes.runningkey));
+app.get('/playfair', asyncRoute(routes.playFair));
 
 app.post('/decrypt-atbash', urlencodedParser, asyncRoute(routes.decryptAtbash));
 app.post('/encrypt-running', urlencodedParser, asyncRoute(routes.encryptRunning));
