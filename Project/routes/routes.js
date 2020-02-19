@@ -1,6 +1,7 @@
 const config = require('../config');
 const atbash = require('../public/atbash.js')
 
+
 exports.encryptAtbash = async(req, res) => {
     let info = {
         encrypt: req.body.encrypt,
@@ -27,13 +28,15 @@ exports.decryptAtbash = async(req, res) => {
 exports.encryptRunning = async(req, res) => {
     let info = new Info({
         encrypt: req.body.encrypt
-    });
+    };
 };
 
-exports.decryptRunning = async(req, res) => {
-    let info = new Info({
+
+exports.decryptRunning = async (req, res) => {
+    let info = {
         decrypt: req.body.decrypt
-    });
+    };
+
 };
 
 exports.home = async(req, res) => {
@@ -46,6 +49,13 @@ exports.home = async(req, res) => {
 exports.game = async(req, res) => {
     res.render('game', {
         title: 'Games',
+        "config": config
+    })
+};
+
+exports.playFair = async(req, res) => {
+    res.render('game', {
+        title: 'PlayFair',
         "config": config
     })
 };
