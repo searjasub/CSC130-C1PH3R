@@ -27,15 +27,26 @@ exports.decryptAtbash = async(req, res) => {
 
 exports.encryptRunning = async(req, res) => {
     let info = {
-        encrypt: req.body.encrypt
+        encrypt: req.body.encrypt,
+        decrypt: runningkey.encrypt(req.body.encrypt)
     }
-};
-
-exports.decryptRunning = async (req, res) => {
+    res.render('runningkey', {
+        title: 'Running Key Cipher',
+        "config": config,
+        "info": info
+    });
+}
+exports.decryptRunning = async(req, res) => {
     let info = {
+        encrypt: runningkey.decrypt(req.body.decrypt),
         decrypt: req.body.decrypt
     }
-};
+    res.render('runningkey', {
+        title: 'Running Key Cipher',
+        "config": config,
+        "info": info
+    });
+}
 
 exports.encryptCaesar = async(req, res) => {
     let info = {
