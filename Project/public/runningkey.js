@@ -1,9 +1,18 @@
+var main = (function() {
 var activeButton = 0;
-var list = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var list = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+var encryptBtn = document.getElementById(encryptBtn);
+var textBtn = document.getElementById(runningText);
+var keyBtn = document.getElementById(key);
+var decText = document.getElementById(bottom-cipher);
+
+encryptBtn.addEventListener("click", function() {
+  swap(textBtn.value.split(""), keyBtn.value.split(""));
+});
 
 function swap(str, pStr) {
-    str.ToUpperCase();
-    pStr.ToUpperCase();
+    str.toUpperCase();
+    pStr.toUpperCase();
     var i = 0;
     var err = 0;
     var val = 0;
@@ -27,35 +36,35 @@ function swap(str, pStr) {
       }
     }
     if (err)
-      p1.textContent = "¡Key length must be greater or equal than the message length!";
+      decText.textContent = "¡Key length must be greater or equal than the message length!";
     else if (!val)
-      p1.textContent = "Introduce only valid characters";
+      decText.textContent = "Introduce only valid characters";
     else
-      p1.innerHTML = "Ciphered Message: " + cStr.join("");
-  }
+      decText.innerHTML = "Ciphered Message: " + cStr.join("");
+  };
 
   function encrypt(msgChar, keyChar) {
     var msgChar_pos;
     var keyChar_pos;
     var res;
-    for (i = 0; i < list.length; i++) {
-      if (list[i] == msgChar)
+    for (let i = 0; i < list.length; i++) {
+      if (list[i] === msgChar)
         msgChar_pos = i;
-      if (list[i] == keyChar)
+      if (list[i] === keyChar)
         keyChar_pos = i;
     }
     res = msgChar_pos + keyChar_pos;
     return list[res % list.length];
-  }
+  };
 
   function decrypt(enChar, keyChar) {
     var enChar_pos;
     var keyChar_pos;
     var res;
-    for (i = 0; i < list.length; i++) {
-      if (list[i] == enChar)
+    for (let i = 0; i < list.length; i++) {
+      if (list[i] === enChar)
         enChar_pos = i;
-      if (list[i] == keyChar)
+      if (list[i] === keyChar)
         keyChar_pos = i;
     }
     res = enChar_pos - keyChar_pos;
@@ -63,3 +72,4 @@ function swap(str, pStr) {
       res += list.length;
     return list[res % list.length];
   }
+});
