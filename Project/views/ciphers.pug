@@ -5,6 +5,9 @@ block content
         h2(class="title") Atbash Cipher
         form(id="form" method="post" action="/encrypt")
             div(class="form-group")
+                if info && info.encrypt
+                    p(id="result2") #{info.encrypt}
+                    label(for="result2" class="control-label") Result
                 input(type="text" id="decipher_caesar_text" autocomplete="off" name="encrypt")
                 label(for="decipher_caesar_text" class="control-label") Plain Text
                 i(class="bar")
@@ -12,6 +15,9 @@ block content
                 input(class="button" value="v Encript v" type="submit")
                 input(class="button" value="^ Decrypt ^" type="submit" formaction="/decrypt-atbash")
             div(class="form-group")
+                if info && info.encrypt
+                    p(id="result2") #{info.encrypt}
+                    label(for="result2" class="control-label") Result
                 input(type="text" id="bottom-cipher" name="decipher")
                 label(for="bottom-cipher" class="control-label") Cipher Text
                 i(class="bar")
