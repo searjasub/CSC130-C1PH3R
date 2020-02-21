@@ -2,7 +2,8 @@ const alphabet = "abcdefghijklmnopqrstuvwxyz";
 const fullAlphabet = alphabet + alphabet + alphabet;
 const alphabet2 = "zyxwvutsrqponmlkjihgfedcba";
 
-const encripB = document.getElementById("encrip");
+const encripB = document.getElementById("encrypt");
+
 encripB.addEventListener("click", function(evt) {
   evt.preventDefault();
   document.getElementById("bottom-cipher").value = '';
@@ -51,11 +52,5 @@ decryptB.addEventListener("click", function(evt) {
 const helpB = document.getElementById('help');
 helpB.addEventListener("click", function(evt) {
   evt.preventDefault();
-
   alert("On the first line you must put the message you want to decrypt and on the second line, you must put the number for what you want the message to be filtered and on the third line the new message will appear.");
 });
-
-console.log(helpB);
-
-// console.log(encripB)
-// console.log(decryptB)
