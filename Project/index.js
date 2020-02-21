@@ -27,8 +27,11 @@ app.get('/playfair', asyncRoute(routes.playFair));
 
 app.post('/encrypt-atbash', urlencodedParser, asyncRoute(routes.encryptAtbash));
 app.post('/decrypt-atbash', urlencodedParser, asyncRoute(routes.decryptAtbash));
+app.post('/encrypt-caesar', urlencodedParser, asyncRoute(routes.encryptCaesar));
+app.post('/decrypt-caesar', urlencodedParser, asyncRoute(routes.decryptCaesar));
 app.post('/encrypt-running', urlencodedParser, asyncRoute(routes.encryptRunning));
 app.post('/decrypt-running', urlencodedParser, asyncRoute(routes.decryptRunning));
-
+app.post('/encrypt-playfair', urlencodedParser, asyncRoute(routes.encryptPlayfair));
+app.post('/decrypt-playfair', urlencodedParser, asyncRoute(routes.decryptPlayfair));
 
 app.listen(3000);
