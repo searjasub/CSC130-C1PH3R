@@ -22,7 +22,7 @@
     [
       "Caesar Cipher",
       "/caesar",
-      "Each letter of the text is replaced by a letter some fixed number of positions in the alphabet. For example with a shift(offset) of 1, A would be replaced by B, B by C, and so on. Mathematical description: x = letter, n = sifht(offset), 'Encrypt(x) = (x + n) % 26' 'Description(x) = (x - n) % 26'"
+      "Each letter of the text is replaced by a letter some fixed number of positions in the alphabet. For example with a shift(offset) of 1, A would be replaced by B, B by C, and so on. Mathematical description: x = letter, n = shift(offset), 'Encrypt(x) = (x + n) % 26' 'Description(x) = (x - n) % 26'"
     ],
     [
       "Playfair",
