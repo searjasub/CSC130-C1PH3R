@@ -31,10 +31,33 @@ exports.encryptRunning = async(req, res) => {
     }
 };
 
-
 exports.decryptRunning = async (req, res) => {
     let info = {
         decrypt: req.body.decrypt
+    }
+};
+
+exports.encryptCaesar = async(req, res) => {
+    let info = {
+        encrypt: req.body.encrypt
+    }
+};
+
+exports.decryptCaesar = async(req, res) => {
+    let info = {
+        encrypt: req.body.encrypt
+    }
+};
+
+exports.encryptPlayfair = async(req, res) => {
+    let info = {
+        encrypt: req.body.encrypt
+    }
+};
+
+exports.decryptPlayfair = async(req, res) => {
+    let info = {
+        encrypt: req.body.encrypt
     }
 };
 
