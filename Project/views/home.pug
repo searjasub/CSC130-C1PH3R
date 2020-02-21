@@ -1,5 +1,11 @@
 extends layout
 
 block content
-    h1= title
-    p Welcome to #{title}
+    each item in config.ciphers
+        div(class="container-home")
+            div(class="card")
+                div(class="card-body")
+                    h5(class="card-title") #{item[0]}
+                    p=item[2]
+                    a(href=item[1] class="btn btn-primary") Go to #{item[0]}
+
