@@ -3,7 +3,7 @@ extends layout
 block content
     div(class="container-form")
         h2(class="title") Running Key
-        form(id="form" method="post" action="/encrypt-running")
+        form(id="form")
             div(class="form-group")
                 input(type="text" id="runningText" autocomplete="off" name="encrypt")
                 label(for="runningText" class="control-label") Plain Text
@@ -13,9 +13,10 @@ block content
                 label(for="key" class="control-label") Key
                 i(class="bar")
             div(class="button-container")
-                input(class="button" id="encBtn" value="v Encrypt v" type="submit")
-                input(class="button" value="^ Decrypt ^" type="submit" formaction="/decrypt-running")
+                button(id="encrypt") v Encrypt v
+                button(id="decrypt") ^ Decrypt ^
             div(class="form-group")
                 input(type="text" id="bottom-cipher" name="decrypt" )
                 label(for="bottom-cipher" class="control-label") Cipher Text
                 i(class="bar")
+            script(src="/runningkey.js")
