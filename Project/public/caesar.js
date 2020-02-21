@@ -5,7 +5,7 @@ const alphabet2 = "zyxwvutsrqponmlkjihgfedcba";
 const encripB = document.getElementById("encrip");
 encripB.addEventListener("click", function(evt) {
   evt.preventDefault();
-  const lastValue = document.getElementById("bottom-cipher").value = '';
+  document.getElementById("bottom-cipher").value = '';
 
   const encripChipher = document.getElementById("decipher_caesar_text").value;
   const offset = document.getElementById("offset").value;
@@ -28,7 +28,7 @@ encripB.addEventListener("click", function(evt) {
 const decryptB = document.getElementById('decrypt');
 decryptB.addEventListener("click", function(evt) {
   evt.preventDefault();
-  const lastValue = document.getElementById("decipher_caesar_text").value = '';
+  document.getElementById("decipher_caesar_text").value = '';
 
   const decryptCipher = document.getElementById("bottom-cipher").value;
   const set = document.getElementById("offset").value;
@@ -48,5 +48,14 @@ decryptB.addEventListener("click", function(evt) {
   }
 });
 
-console.log(encripB)
-console.log(decryptB)
+const helpB = document.getElementById('help');
+helpB.addEventListener("click", function(evt) {
+  evt.preventDefault();
+
+  alert("On the first line you must put the message you want to decrypt and on the second line, you must put the number for what you want the message to be filtered and on the third line the new message will appear.");
+});
+
+console.log(helpB);
+
+// console.log(encripB)
+// console.log(decryptB)
