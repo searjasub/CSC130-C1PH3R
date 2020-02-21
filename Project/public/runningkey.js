@@ -101,3 +101,27 @@ decryptBtn.addEventListener('click', function (evt) {
 
     document.getElementById('runningText').value = finalResult.join("");
 });
+const saveBtn = document.getElementById("saveBtn");
+saveBtn.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    const fs = require('fs');
+    let path = 'SavedCiphers' + document.getElementById("key").value + '.txt';
+    let my_file = `Plain Text: ${document.getElementById("runningText").value}
+    Key: ${document.getElementById("key").value} 
+    Coded Text: ${document.getElementById("bottom-cipher")}`;
+
+    if(!fs.existsSync(path)) {
+        fs.open(path, "w", function (err) {
+            if(err) throw err;
+        });
+    }
+
+    fs.writeFile(path, my_file, function (err) {
+        if(err) throw err;
+    });
+});
+
+const loadBtn = document.getElementById("loadBtn");
+loadBtn.addEventListener("click", function (evt) {
+    evt.preventDefault();
+});
