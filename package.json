@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/searjasub/CSC130-C1PH3R#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "node": "^13.8.0"
   }
 }
