@@ -163,6 +163,17 @@ table.gridtable td {
     height: 5rem;
 }
 
+#encrip, #decrypt {
+    background-color: seagreen;
+    margin: 0 40px;
+    position: relative;
+    border: 1px;
+    font-size: 1.1rem;
+    color: white;
+    padding: 0.75rem 3rem;
+    cursor: pointer;  
+}
+
 .form-group {
     position: relative;
     margin-top: 2.25rem;
