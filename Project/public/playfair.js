@@ -5,6 +5,7 @@ let usedLetters = [];
 //let lowAlphabet =["a", "b", "c", "d", "e","f","g","h","i","k"];
 let secretMsg;
 let Grid = [];
+let replaceWithX;
 
 //saves the default keyword as 'keyword'
 
@@ -52,6 +53,24 @@ function fillGrid(){
     }
 }
 function Encrypt(){
+
+    secretMsg = document.getElementById("encrypt").value;
+    let lettersUsedOnce;
+    //have to read the secret msg and replace letters that have been used with a X
+    secretMsg.split("^([a-zA-z]{2})");
+
+
+    for (let i = 0; i < secretMsg.length; i++){
+
+
+        lettersUsedOnce.add(i);
+        /*
+        if (){
+
+        }
+         */
+
+    }
 
 
 
