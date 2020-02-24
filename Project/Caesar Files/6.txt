@@ -1,0 +1,3 @@
+Plain Text: hello 
+Offset: 6 
+Coded Text: nkrru

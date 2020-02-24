@@ -101,26 +101,34 @@ decryptBtn.addEventListener('click', function (evt) {
 
     document.getElementById('runningText').value = finalResult.join("");
 });
-const saveBtn = document.getElementById("saveBtn");
-saveBtn.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    let path = 'SavedCiphers' + document.getElementById("key").value + '.txt';
-    let my_file = `Plain Text: ${document.getElementById("runningText").value}
-    Key: ${document.getElementById("key").value} 
-    Coded Text: ${document.getElementById("bottom-cipher")}`;
 
-//     if(!fs.existsSync(path)) {
-//         fs.open(path, "w", function (err) {
-//             if(err) throw err;
-//         });
-//     }
-//
-//     fs.writeFile(path, my_file, function (err) {
-//         if(err) throw err;
-//     });
-});
+const saveB = document.getElementById("saveBtn");
+saveB.addEventListener("click", function(evt) {
+  evt.preventDefault();
 
-const loadBtn = document.getElementById("loadBtn");
-loadBtn.addEventListener("click", function (evt) {
-    evt.preventDefault();
+  const encryptText = document.getElementById("runningText").value;
+  const key = document.getElementById("key").value;
+  const decryptText = document.getElementById("bottom-cipher").value;
+
+  let data = 'Plain Text: ' + encryptText + ' \r\n' + 
+  'Key: ' + key + ' \r\n' + 
+  'Coded Text: ' + decryptText;
+
+  // const path = 'OffsetFiles/EncryptFiles/' + offSet + '.txt';
+  const my_file = new Blob([data], { type: "text/plain;charset=utf-8" });
+  const fileName = key + '.txt';	 
+
+  let newLink = document.createElement("a");
+
+  newLink.download = fileName;
+
+  if (window.webkitURL != null) {
+    newLink.href = window.webkitURL.createObjectURL(my_file);
+  }
+  else {
+    newLink.href = window.URL.createObjectURL(my_file);
+    newLink.style.display = "none";
+    document.body.appendChild(newLink);
+  }
+  newLink.click();
 });
