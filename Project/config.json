@@ -1,33 +1,33 @@
 {
-    "menu": [
-        [
-            "Ciphers",
-            "/ciphers "
-        ],
-        [
-            "Game",
-            "/game"
-        ]
+  "menu": [
+    [
+      "Ciphers",
+      "/ciphers "
     ],
-    "ciphers": [
-        [
-            "Atbash",
-            "/atbash",
-            "The Atbash cipher is a substitution cipher with a specific key where the letters of the alphabet are reversed. I.e. all 'A's are replaced with 'Z's, all 'B's are replaced with 'Y's, and so on"
-        ],
-        [
-            "Running Key",
-            "/runningkey",
-            "To encipher, a table of alphabets can be used, termed a tabula recta, Vigenère square, or Vigenère table. It consists of the alphabet written out 26 times in different rows, each alphabet shifted cyclically to the left compared to the previous alphabet, corresponding to the 26 possible Caesar ciphers. At different points in the encryption process, the cipher uses a different alphabet from one of the rows. The alphabet used at each point depends on a repeating keyword."
-        ],
-        [
-            "Caesar Cipher",
-            "/caesar",
-            "Each letter of the text is replaced by a letter some fixed number of positions in the alphabet. For example with a shift(offset) of 1, A would be replaced by B, B by C, and so on. Mathematical description: x = letter, n = shift(offset), 'Encrypt(x) = (x + n) % 26' 'Description(x) = (x - n) % 26'"
-        ],
-        [
-            "Playfair",
-            "/playfair"
-        ]
+    [
+      "Game",
+      "/game"
     ]
+  ],
+  "ciphers": [
+    [
+      "Atbash",
+      "/atbash"
+    ],
+    [
+      "Running Key",
+      "/runningkey",
+      "To encipher, a table of alphabets can be used, termed a tabula recta, Vigenère square, or Vigenère table. It consists of the alphabet written out 26 times in different rows, each alphabet shifted cyclically to the left compared to the previous alphabet, corresponding to the 26 possible Caesar ciphers. At different points in the encryption process, the cipher uses a different alphabet from one of the rows. The alphabet used at each point depends on a repeating keyword."
+    ],
+    [
+      "Caesar Cipher",
+      "/caesar",
+      "Each letter of the text is replaced by a letter some fixed number of positions in the alphabet. For example with a shift(offset) of 1, A would be replaced by B, B by C, and so on. Mathematical description: x = letter, n = shift(offset), 'Encrypt(x) = (x + n) % 26' 'Description(x) = (x - n) % 26'"
+    ],
+    [
+      "Playfair",
+      "/playfair",
+      "To encipher, we use a 5x5 grid of the alphabet, using every letter but J, then we stick a keyword into the grid along with every other letter that was not in the keyword. After so we take the message you want to decrypt and "
+    ]
+  ]
 }

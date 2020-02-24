@@ -53,7 +53,7 @@ exports.game = async (req, res) => {
 };
 
 exports.playFair = async (req, res) => {
-    res.render('game', {
+    res.render('playfair', {
         title: 'PlayFair',
         "config": config
     })

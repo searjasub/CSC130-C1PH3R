@@ -101,32 +101,34 @@ decryptBtn.addEventListener('click', function (evt) {
 
     document.getElementById('runningText').value = finalResult.join("");
 });
-const saveBtn = document.getElementById("saveBtn");
-saveBtn.addEventListener("click", function (evt) {
-    evt.preventDefault();
 
-    const plainText = document.getElementById("runningText").value;
-    const keyText = document.getElementById("key").value;
-    const codedMsg = document.getElementById("bottom-cipher").value;
+const saveB = document.getElementById("saveBtn");
+saveB.addEventListener("click", function(evt) {
+  evt.preventDefault();
 
-    let data = 'Plain Text: ' + plainText + ' \r\n' +
-        'Offset: ' + keyText + ' \r\n' +
-        'Coded Text: ' + codedMsg;
+  const encryptText = document.getElementById("runningText").value;
+  const key = document.getElementById("key").value;
+  const decryptText = document.getElementById("bottom-cipher").value;
 
-    const my_file = new Blob([data], { type: "text/plain;charset=utf-8" });
-    const fileName = keyText + '.txt';
+  let data = 'Plain Text: ' + encryptText + ' \r\n' + 
+  'Key: ' + key + ' \r\n' + 
+  'Coded Text: ' + decryptText;
 
-    let newLink = document.createElement("a");
+  // const path = 'OffsetFiles/EncryptFiles/' + offSet + '.txt';
+  const my_file = new Blob([data], { type: "text/plain;charset=utf-8" });
+  const fileName = key + '.txt';	 
 
-    newLink.download = fileName;
+  let newLink = document.createElement("a");
 
-    if (window.webkitURL != null) {
-        newLink.href = window.webkitURL.createObjectURL(my_file);
-    }
-    else {
-        newLink.href = window.URL.createObjectURL(my_file);
-        newLink.style.display = "none";
-        document.body.appendChild(newLink);
-    }
-    newLink.click();
+  newLink.download = fileName;
+
+  if (window.webkitURL != null) {
+    newLink.href = window.webkitURL.createObjectURL(my_file);
+  }
+  else {
+    newLink.href = window.URL.createObjectURL(my_file);
+    newLink.style.display = "none";
+    document.body.appendChild(newLink);
+  }
+  newLink.click();
 });
