@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="284637d6-3555-4162-8f76-a81f55659284" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/Project/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/public/playfair.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/public/playfair.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/routes/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/routes/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/views/playfair.pug" beforeDir="false" afterPath="$PROJECT_DIR$/Project/views/playfair.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -10,7 +14,19 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1XpgwuoW0q1X8nDtwRihsDXxH2Q" />
@@ -27,13 +43,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="10.16.3" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.14.1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SvnConfiguration">
@@ -48,15 +59,14 @@
       <updated>1580503992805</updated>
       <workItem from="1580503994822" duration="2421000" />
       <workItem from="1580936615880" duration="20000" />
-      <workItem from="1582325000194" duration="2579000" />
-      <workItem from="1582575325381" duration="2038000" />
+      <workItem from="1582148594319" duration="112000" />
     </task>
-    <task id="LOCAL-00001" summary="WIP Save">
-      <created>1582576487333</created>
+    <task id="LOCAL-00001" summary="Setup">
+      <created>1580504073284</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1582576487333</updated>
+      <updated>1580504073284</updated>
     </task>
     <task id="LOCAL-00002" summary="Setup1">
       <created>1580504261538</created>
@@ -72,7 +82,6 @@
       <option name="project" value="LOCAL" />
       <updated>1580506403780</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,36 +91,34 @@
     <MESSAGE value="Setup" />
     <MESSAGE value="Setup1" />
     <MESSAGE value="Setup2" />
-    <MESSAGE value="WIP Save" />
-    <option name="LAST_COMMIT_MESSAGE" value="WIP Save" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="445" y="13" key="CommitChangelistDialog2" timestamp="1582576486024">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="556" y="28" key="CommitChangelistDialog2" timestamp="1580506403164">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="445" y="13" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582576486024" />
     <state x="556" y="28" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580506403164" />
     <state x="592" y="218" key="FileChooserDialogImpl" timestamp="1580936582501">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="592" y="218" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580936582501" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580506307539" />
-    <state width="1515" height="132" key="GridCell.Tab.0.bottom" timestamp="1582331520905">
+    <state width="1515" height="189" key="GridCell.Tab.0.bottom" timestamp="1582579507955">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="132" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582331520905" />
-    <state width="1515" height="132" key="GridCell.Tab.0.center" timestamp="1582331520905">
+    <state width="1515" height="189" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582579507955" />
+    <state width="1515" height="189" key="GridCell.Tab.0.center" timestamp="1582579507955">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="132" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582331520905" />
-    <state width="1515" height="132" key="GridCell.Tab.0.left" timestamp="1582331520905">
+    <state width="1515" height="189" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582579507955" />
+    <state width="1515" height="189" key="GridCell.Tab.0.left" timestamp="1582579507955">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="132" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582331520905" />
-    <state width="1515" height="132" key="GridCell.Tab.0.right" timestamp="1582331520905">
+    <state width="1515" height="189" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582579507955" />
+    <state width="1515" height="189" key="GridCell.Tab.0.right" timestamp="1582579507955">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="132" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582331520905" />
+    <state width="1515" height="189" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582579507955" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1580504990040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
