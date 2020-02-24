@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="284637d6-3555-4162-8f76-a81f55659284" name="Default Changelist" comment="Setup2">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+    <list default="true" id="284637d6-3555-4162-8f76-a81f55659284" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Project/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Project/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/public/runningkey.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/public/runningkey.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/views/runningkey.pug" beforeDir="false" afterPath="$PROJECT_DIR$/Project/views/runningkey.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/views/playfair.pug" beforeDir="false" afterPath="$PROJECT_DIR$/Project/views/playfair.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,13 +49,14 @@
       <workItem from="1580503994822" duration="2421000" />
       <workItem from="1580936615880" duration="20000" />
       <workItem from="1582325000194" duration="2579000" />
+      <workItem from="1582575325381" duration="2038000" />
     </task>
-    <task id="LOCAL-00001" summary="Setup">
-      <created>1580504073284</created>
+    <task id="LOCAL-00001" summary="WIP Save">
+      <created>1582576487333</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1580504073284</updated>
+      <updated>1582576487333</updated>
     </task>
     <task id="LOCAL-00002" summary="Setup1">
       <created>1580504261538</created>
@@ -77,6 +72,7 @@
       <option name="project" value="LOCAL" />
       <updated>1580506403780</updated>
     </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,34 +82,36 @@
     <MESSAGE value="Setup" />
     <MESSAGE value="Setup1" />
     <MESSAGE value="Setup2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup2" />
+    <MESSAGE value="WIP Save" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP Save" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="556" y="28" key="CommitChangelistDialog2" timestamp="1580506403164">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="445" y="13" key="CommitChangelistDialog2" timestamp="1582576486024">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="445" y="13" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582576486024" />
     <state x="556" y="28" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580506403164" />
     <state x="592" y="218" key="FileChooserDialogImpl" timestamp="1580936582501">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="592" y="218" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580936582501" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580506307539" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1582326416225">
+    <state width="1515" height="132" key="GridCell.Tab.0.bottom" timestamp="1582331520905">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582326416225" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1582326416225">
+    <state width="1515" height="132" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582331520905" />
+    <state width="1515" height="132" key="GridCell.Tab.0.center" timestamp="1582331520905">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582326416225" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1582326416224">
+    <state width="1515" height="132" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582331520905" />
+    <state width="1515" height="132" key="GridCell.Tab.0.left" timestamp="1582331520905">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582326416224" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1582326416225">
+    <state width="1515" height="132" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582331520905" />
+    <state width="1515" height="132" key="GridCell.Tab.0.right" timestamp="1582331520905">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582326416225" />
+    <state width="1515" height="132" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582331520905" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1580504990040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
