@@ -1,6 +1,5 @@
 const config = require('../config');
 const atbash = require('../public/atbash.js');
-const running = require('../public/runningkey.js');
 
 
 exports.encryptAtbash = async (req, res) => {
@@ -25,44 +24,6 @@ exports.decryptAtbash = async (req, res) => {
         "config": config,
         "info": info
     });
-};
-
-exports.encryptRunning = async (req, res) => {
-    let info = {
-        key: req.body.key,
-        encrypt: req.body.encrypt,
-        decrypt: running.encrypt(req.body.encrypt, req.body.key)
-};
-    res.render('runningkey_submitted', {
-        title: 'Running Key - Encrypted',
-        "config": config,
-         info
-    })
-};
-
-exports.decryptRunning = async (req, res) => {
-    let info = {
-        key: req.body.key,
-        encrypt: req.body.decrypt,
-        decrypt: running.decrypt(req.body.decrypt, req.body.key)
-    };
-    res.render('runningkey_submitted', {
-        title: 'Running Key - Decrypted',
-        "config": config,
-        info
-    })
-};
-
-exports.encryptCaesar = async (req, res) => {
-    let info = {
-        encrypt: req.body.encrypt
-    }
-};
-
-exports.decryptCaesar = async (req, res) => {
-    let info = {
-        encrypt: req.body.encrypt
-    }
 };
 
 exports.encryptPlayfair = async (req, res) => {

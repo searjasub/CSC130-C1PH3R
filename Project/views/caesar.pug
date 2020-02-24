@@ -11,11 +11,14 @@ block content
           div(class="form-group")
             input(type="number" id="offset")
             label(for="offset" class="control-label") Offset
+            i(class="bar")
           div(class="button-container")
-            button(id="encrip") v Encript v
+            button(id="encrypt") v Encrypt v
             button(id="decrypt") ^ Decrypt ^
-          script(src="/caesar.js")
           div(class="form-group")
             input(type="text" id="bottom-cipher" name="decipher")
             label(for="bottom-cipher" class="control-label") Cipher Text
             i(class="bar")
+          div(class="help-group")
+            button(id="help") Help!
+          script(src="/caesar.js")
