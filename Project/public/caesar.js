@@ -1,9 +1,8 @@
 const alphabet = "abcdefghijklmnopqrstuvwxyz";
 const fullAlphabet = alphabet + alphabet + alphabet;
-const alphabet2 = "zyxwvutsrqponmlkjihgfedcba";
+
 
 const encripB = document.getElementById("encrypt");
-
 encripB.addEventListener("click", function(evt) {
   evt.preventDefault();
   document.getElementById("bottom-cipher").value = '';
@@ -49,8 +48,34 @@ decryptB.addEventListener("click", function(evt) {
   }
 });
 
-const helpB = document.getElementById('help');
-helpB.addEventListener("click", function(evt) {
+
+const saveB = document.getElementById("save");
+saveB.addEventListener("click", function(evt) {
   evt.preventDefault();
-  alert("On the first line you must put the message you want to decrypt and on the second line, you must put the number for what you want the message to be filtered and on the third line the new message will appear.");
+
+  const encryptText = document.getElementById("decipher_caesar_text").value;
+  const offSet = document.getElementById("offset").value;
+  const decryptText = document.getElementById("bottom-cipher").value;
+
+  let data = 'Plain Text: ' + encryptText + ' \r\n' + 
+  'Offset: ' + offSet + ' \r\n' + 
+  'Coded Text: ' + decryptText;
+
+  // const path = 'OffsetFiles/EncryptFiles/' + offSet + '.txt';
+  const my_file = new Blob([data], { type: "text/plain;charset=utf-8" });
+  const fileName = offSet + '.txt';	 
+
+  let newLink = document.createElement("a");
+
+  newLink.download = fileName;
+
+  if (window.webkitURL != null) {
+    newLink.href = window.webkitURL.createObjectURL(my_file);
+  }
+  else {
+    newLink.href = window.URL.createObjectURL(my_file);
+    newLink.style.display = "none";
+    document.body.appendChild(newLink);
+  }
+  newLink.click();
 });
