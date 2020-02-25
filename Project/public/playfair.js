@@ -52,7 +52,7 @@ function fillGrid(){
 
     }
 }
-function Encrypt(){
+function Encrypt() {
 
     secretMsg = document.getElementById("encrypt").value;
     let lettersUsedOnce;
@@ -60,7 +60,7 @@ function Encrypt(){
     secretMsg.split("^([a-zA-z]{2})");
 
 
-    for (let i = 0; i < secretMsg.length; i++){
+    for (let i = 0; i < secretMsg.length; i++) {
 
 
         lettersUsedOnce.add(i);
@@ -71,8 +71,35 @@ function Encrypt(){
          */
 
     }
-
-
-
 }
+
+    const saveB = document.getElementById("saveBtn");
+    saveB.addEventListener("click", function(evt) {
+        evt.preventDefault();
+
+        const encryptText = document.getElementById("runningText").value;
+        const key = document.getElementById("key").value;
+        const decryptText = document.getElementById("bottom-cipher").value;
+
+        let data = 'Plain Text: ' + encryptText + ' \r\n' +
+            'Coded Text: ' + decryptText;
+
+        // const path = 'OffsetFiles/EncryptFiles/' + offSet + '.txt';
+        const my_file = new Blob([data], { type: "text/plain;charset=utf-8" });
+        const fileName = decryptText + '.txt';
+
+        let newLink = document.createElement("a");
+
+        newLink.download = fileName;
+
+        if (window.webkitURL != null) {
+            newLink.href = window.webkitURL.createObjectURL(my_file);
+        }
+        else {
+            newLink.href = window.URL.createObjectURL(my_file);
+            newLink.style.display = "none";
+            document.body.appendChild(newLink);
+        }
+        newLink.click();
+    });
 
