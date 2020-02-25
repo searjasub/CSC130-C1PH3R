@@ -12,7 +12,8 @@
   "ciphers": [
     [
       "Atbash",
-      "/atbash"
+      "/atbash",
+      "The Atbash cipher is a substitution cipher with a specific key where the letters of the alphabet are reversed. I.e. all 'A's are replaced with 'Z's, all 'B's are replaced with 'Y's, and so on"
     ],
     [
       "Running Key",
