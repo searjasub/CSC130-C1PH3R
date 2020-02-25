@@ -63,7 +63,7 @@ saveB.addEventListener("click", function(evt) {
 
   // const path = 'OffsetFiles/EncryptFiles/' + offSet + '.txt';
   const my_file = new Blob([data], { type: "text/plain;charset=utf-8" });
-  const fileName = offSet + '.txt';	 
+  const fileName = 'C1PH3R-with-off-set-' +offSet +'.txt';
 
   let newLink = document.createElement("a");
 

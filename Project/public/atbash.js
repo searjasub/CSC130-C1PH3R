@@ -66,15 +66,15 @@ const saveB = document.getElementById("saveBtn");
 saveB.addEventListener("click", function (evt) {
     evt.preventDefault();
 
-    const encryptText = document.getElementById("decipher_caesar_text").value;
-    const decryptText = document.getElementById("bottom-cipher").value;
+    const encryptText = document.getElementById("plain-text").value;
+    const decryptText = document.getElementById("cipher-text").value;
 
     let data = 'Plain Text: ' + encryptText + ' \r\n' +
         'Coded Text: ' + decryptText;
 
     // const path = 'OffsetFiles/EncryptFiles/' + offSet + '.txt';
     const my_file = new Blob([data], {type: "text/plain;charset=utf-8"});
-    const fileName = decryptText + '.txt';
+    const fileName = decryptText + ' - C1PH3R.txt';
 
     let newLink = document.createElement("a");
 
