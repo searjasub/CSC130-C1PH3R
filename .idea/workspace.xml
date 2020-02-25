@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="284637d6-3555-4162-8f76-a81f55659284" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project/public/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/Project/views/layout.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/Project/config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,14 +56,14 @@
       <workItem from="1580503994822" duration="2421000" />
       <workItem from="1580936615880" duration="20000" />
       <workItem from="1582148594319" duration="112000" />
-      <workItem from="1582594460579" duration="698000" />
+      <workItem from="1582594460579" duration="1014000" />
     </task>
-    <task id="LOCAL-00001" summary="Setup">
-      <created>1580504073284</created>
+    <task id="LOCAL-00001" summary="fixing the home thing">
+      <created>1582595256098</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1580504073284</updated>
+      <updated>1582595256098</updated>
     </task>
     <task id="LOCAL-00002" summary="Setup1">
       <created>1580504261538</created>
@@ -81,6 +79,7 @@
       <option name="project" value="LOCAL" />
       <updated>1580506403780</updated>
     </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,12 +89,14 @@
     <MESSAGE value="Setup" />
     <MESSAGE value="Setup1" />
     <MESSAGE value="Setup2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup2" />
+    <MESSAGE value="fixing the home thing" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing the home thing" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="556" y="28" key="CommitChangelistDialog2" timestamp="1580506403164">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="445" y="13" key="CommitChangelistDialog2" timestamp="1582595255400">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="445" y="13" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582595255400" />
     <state x="556" y="28" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580506403164" />
     <state x="592" y="218" key="FileChooserDialogImpl" timestamp="1580936582501">
       <screen x="0" y="0" width="1536" height="824" />
@@ -122,9 +123,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580504990040" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1580506407490">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="442" y="197" key="Vcs.Push.Dialog.v2" timestamp="1582595263898">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="442" y="197" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582595263898" />
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580506407490" />
     <state x="476" y="203" key="git4idea.merge.GitPullDialog" timestamp="1582594697499">
       <screen x="0" y="0" width="1536" height="824" />
