@@ -2,20 +2,19 @@ extends layout
 
 block content
     div(class="container-form")
-        h2(class="title") Play Fair Cipher
+        h2(class="title") R0T-13 Cipher
         form(id="form" method="post" action="/encrypt")
             div(class="form-group")
-                input(type="text" id="decipher_playfair_text" autocomplete="off" name="encrypt")
-                label(for="decipher_playfair_text" class="control-label") Plain Text
+                input(type="text" id="rot13_text" autocomplete="off" name="encrypt")
+                label(for="rot13_text" class="control-label") Plain Text
                 i(class="bar")
             div(class="button-container")
                 button(id="encrypt") v Encrypt v
                 button(id="decrypt") ^ Decrypt ^
-            script(src="/playfair.js")
             div(class="form-group")
-                input(type="text" id="bottom-cipher" name="decipher")
-                label(for="bottom-cipher" class="control-label") Cipher Text
+                input(type="text" id="Rot13_cipher" name="decipher")
+                label(for="Rot13_cipher" class="control-label") Cipher Text
                 i(class="bar")
             div(class="button-container")
                 button(class="button" id="saveBtn") Save
-                script(src="/playfair.js")
+            script(src="/rot13.js")
