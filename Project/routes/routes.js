@@ -14,9 +14,9 @@ exports.game = async (req, res) => {
     })
 };
 
-exports.playFair = async (req, res) => {
-    res.render('playfair', {
-        title: 'PlayFair',
+exports.rot13 = async (req, res) => {
+    res.render('rot13', {
+        title: 'Rot13',
         "config": config
     })
 };
