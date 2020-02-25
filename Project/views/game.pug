@@ -1,1 +1,15 @@
 extends layout
+block content 
+        body(onload="start()")
+                h2(class="game") Game
+                p(id="score")
+                p(id="question text")
+                select(id="guessInput")
+                        option(value="Rotate") Rotate
+                        option(value="ROT13") ROT13
+                        option(value="Morse") Morse
+                        option(value="Base64") Base64
+                        option(value="Atbash") Atbash
+                button(id="guessButton" onclick="guess()") Guess
+                script 
+                        include ../public/game.js
