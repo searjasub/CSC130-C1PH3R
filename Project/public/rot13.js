@@ -9,19 +9,23 @@ encryptB.addEventListener("click", function (evn) {
     const encriptCipher = document.getElementById("rot13_text").value;
     const offset = 13;
 
+    let result = "";
+
     for (i =0; i < encriptCipher.length; i++ ){
         const letters = encriptCipher[i];
         const position = alphabet.indexOf(letters);
 
         if (position == -1){
-            document.getElementById("Rot13_cipher").value += letters;
+            result += letters;
         } else {
             const nextPosition =  position + offset % 26;
             const nextLetter =  Alphabet2[nextPosition];
 
-            document.getElementById("Rot13_cipher").value += nextLetter;
+            result += nextLetter;
         }
     }
+    document.getElementById("Rot13_cipher").value = "";
+    document.getElementById("Rot13_cipher").value = result;
 });
 
 const decryptB = document.getElementById("decrypt");
