@@ -9,10 +9,13 @@ block content
                 label(for="decipher_playfair_text" class="control-label") Plain Text
                 i(class="bar")
             div(class="button-container")
-                 button(id="encrypt") v Encrypt v
-                 button(id="decrypt") ^ Decrypt ^
+                button(id="encrypt") v Encrypt v
+                button(id="decrypt") ^ Decrypt ^
             script(src="/playfair.js")
             div(class="form-group")
                 input(type="text" id="bottom-cipher" name="decipher")
                 label(for="bottom-cipher" class="control-label") Cipher Text
                 i(class="bar")
+            div(class="button-container")
+                button(class="button" id="saveBtn") Save
+                script(src="/playfair.js")
