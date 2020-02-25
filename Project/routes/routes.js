@@ -1,42 +1,4 @@
 const config = require('../config');
-const atbash = require('../public/atbash.js');
-
-
-exports.encryptAtbash = async (req, res) => {
-    let info = {
-        encrypt: req.body.encrypt,
-        decrypt: atbash.encrypt(req.body.encrypt)
-    };
-    res.render('atbash', {
-        title: 'Atbash',
-        "config": config,
-        "info": info
-    });
-};
-
-exports.decryptAtbash = async (req, res) => {
-    let info = {
-        encrypt: atbash.decrypt(req.body.decrypt),
-        decrypt: req.body.decrypt
-    };
-    res.render('atbash', {
-        title: 'Atbash',
-        "config": config,
-        "info": info
-    });
-};
-
-exports.encryptPlayfair = async (req, res) => {
-    let info = {
-        encrypt: req.body.encrypt
-    }
-};
-
-exports.decryptPlayfair = async (req, res) => {
-    let info = {
-        decrypt: req.body.decrypt
-    }
-};
 
 exports.home = async (req, res) => {
     res.render('home', {

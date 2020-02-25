@@ -4,21 +4,21 @@ block content
     div(class="container-form")
         h2(class="title") Caesar Cipher
         form(id="form" method="post" action="/encrypt")
-          div(class="form-group")
-            input(type="text" id="decipher_caesar_text" name="encrypt")
-            label(for="decipher_caesar_text" class="control-label") Plain Text
-            i(class="bar")
-          div(class="form-group")
-            input(type="number" id="offset")
-            label(for="offset" class="control-label") Offset
-            i(class="bar")
-          div(class="button-container")
-            button(id="encrypt") v Encrypt v
-            button(id="decrypt") ^ Decrypt ^
-          div(class="form-group")
-            input(type="text" id="bottom-cipher" name="decipher")
-            label(for="bottom-cipher" class="control-label") Cipher Text
-            i(class="bar")
-          div(class="button-container")
-            button(class="button" id="save") Save
-          script(src="/caesar.js")
+            div(class="form-group")
+                input(type="text" id="decipher_caesar_text" name="encrypt")
+                label(for="decipher_caesar_text" class="control-label") Plain Text
+                i(class="bar")
+            div(class="form-group")
+                input(type="number" id="offset")
+                label(for="offset" class="control-label") Offset
+                i(class="bar")
+            div(class="button-container")
+                button(id="encrypt") v Encrypt v
+                button(id="decrypt") ^ Decrypt ^
+            div(class="form-group")
+                input(type="text" id="bottom-cipher" name="decipher")
+                label(for="bottom-cipher" class="control-label") Cipher Text
+                i(class="bar")
+            div(class="button-container")
+                button(class="button" id="save") Save
+            script(src="/caesar.js")
