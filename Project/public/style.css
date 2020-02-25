@@ -163,7 +163,7 @@ table.gridtable td {
     height: 5rem;
 }
 
-#encrypt, #decrypt {
+#encrypt, #decrypt, #save {
     background-color: seagreen;
     margin: 0 40px;
     position: relative;

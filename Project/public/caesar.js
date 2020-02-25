@@ -2,8 +2,8 @@ const alphabet = "abcdefghijklmnopqrstuvwxyz";
 const fullAlphabet = alphabet + alphabet + alphabet;
 
 
-const encripB = document.getElementById("encrypt");
-encripB.addEventListener("click", function(evt) {
+const encrypB = document.getElementById("encrypt");
+encrypB.addEventListener("click", function(evt) {
   evt.preventDefault();
   document.getElementById("bottom-cipher").value = '';
 
@@ -11,7 +11,7 @@ encripB.addEventListener("click", function(evt) {
   const offset = document.getElementById("offset").value;
 
   for(i = 0; i < encripChipher.length; i++) {
-    const letters = encripChipher[i];
+    const letters = encripChipher[i]; 
     const position = alphabet.indexOf(letters);
 
     if(position == -1) {

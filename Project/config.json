@@ -12,7 +12,8 @@
   "ciphers": [
     [
       "Atbash",
-      "/atbash"
+      "/atbash",
+      "The Atbash cipher is a substitution cipher with a specific key where the letters of the alphabet are reversed. I.e. all 'A's are replaced with 'Z's, all 'B's are replaced with 'Y's, and so on"
     ],
     [
       "Running Key",
@@ -21,7 +22,8 @@
     ],
     [
       "Caesar Cipher",
-      "/caesar"
+      "/caesar",
+      "Each letter of the text is replaced by a letter some fixed number of positions in the alphabet. For example with a shift(offset) of 1, A would be replaced by B, B by C, and so on. Mathematical description: x = letter, n = shift(offset), 'Encrypt(x) = (x + n) % 26' 'Description(x) = (x - n) % 26'"
     ],
     [
       "Playfair",

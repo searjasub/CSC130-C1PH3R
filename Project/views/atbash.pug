@@ -12,7 +12,7 @@ block content
                 label(for="decipher_caesar_text" class="control-label") Plain Text
                 i(class="bar")
             div(class="button-container")
-                input(class="button" value="v Encript v" type="submit" formaction="/encrypt-atbash")
+                input(class="button" value="v Encrypt v" type="submit" formaction="/encrypt-atbash")
                 input(class="button" value="^ Decrypt ^" type="submit" formaction="/decrypt-atbash")
             div(class="form-group")
                 if info && info.decrypt
@@ -21,3 +21,6 @@ block content
                 input(type="text" id="bottom-cipher" name="decrypt")
                 label(for="bottom-cipher" class="control-label") Cipher Text
                 i(class="bar")
+            div(class="button-container")
+                button(class="button" id="saveBtn") Save
+            script(src="/atbash.js")

@@ -34,7 +34,7 @@ exports.encryptPlayfair = async (req, res) => {
 
 exports.decryptPlayfair = async (req, res) => {
     let info = {
-        encrypt: req.body.encrypt
+        decrypt: req.body.decrypt
     }
 };
 
