@@ -2,20 +2,14 @@ extends layout
 block content 
         body(onload="start()")
                 h2(class="game") Game
-                p Score:
                 p(id="score")
-                p(id="tries")
-                p The quick brown fox jumps over the lazy dog
+                p Which cipher is this?
+                p(id="unencryptStr")
                 p(id="question text")
                 select(id="guessInput")
-                        option(value="Rotate") Rotate
                         option(value="ROT13") ROT13
-                        option(value="Morse") Morse
-                        option(value="Base64") Base64
+                        option(value="Caesar") Caesar
                         option(value="Atbash") Atbash
                 button(id="guessButton" onclick="guess()") Guess
                 script 
                         include ../public/game.js
-                        include ../public/atbash.js
-                        include ../public/caesar.js
-                        include ../public/rot13.js
