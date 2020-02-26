@@ -26,9 +26,9 @@
       "Each letter of the text is replaced by a letter some fixed number of positions in the alphabet. For example with a shift(offset) of 1, A would be replaced by B, B by C, and so on. Mathematical description: x = letter, n = shift(offset), 'Encrypt(x) = (x + n) % 26' 'Description(x) = (x - n) % 26'"
     ],
     [
-      "Playfair",
-      "/playfair",
-      "To encipher, we use a 5x5 grid of the alphabet, using every letter but J, then we stick a keyword into the grid along with every other letter that was not in the keyword. After so we take the message you want to decrypt and "
+      "R0T-13",
+      "/rot13",
+      "Rot 13 replaces each letter in the word by an offset of 13, and returns the word back after off setting each individual value. To Decrypt it, it reverses the offset of 13, returning the original letters of the word."
     ]
   ]
 }

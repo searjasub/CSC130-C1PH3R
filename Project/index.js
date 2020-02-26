@@ -18,6 +18,6 @@ app.get('/ciphers', asyncRoute(routes.ciphers));
 app.get('/atbash', asyncRoute(routes.atbash));
 app.get('/caesar', asyncRoute(routes.caesar));
 app.get('/runningkey', asyncRoute(routes.runningkey));
-app.get('/playfair', asyncRoute(routes.playFair));
+app.get('/rot13', asyncRoute(routes.rot13));
 
 app.listen(3000);
