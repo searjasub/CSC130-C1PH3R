@@ -1,5 +1,6 @@
 var answer;
 var score;
+var strikes;
 var currentQuestion;
 var questions = new Map([
     ["dGhlIHF1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZw==", "Base64"],
@@ -12,6 +13,7 @@ var keys = Array.from(questions.keys());
 
 function start() {
     score = 0;
+    strikes = 0;
     changeQuestion();
 }
 
@@ -26,6 +28,13 @@ function guess() {
     str = document.getElementById("guessInput").value;
     if (str === answer) {
         score++;
+        alert("Correct");
+        changeQuestion();
+    } else if (strikes > 1) {
+        alert("You're out of tries")
+        start();
+    } else {
+        strikes++;
+        document.getElementById("tries").innerHTML = 3 - strikes;
     }
-    changeQuestion();
 }
