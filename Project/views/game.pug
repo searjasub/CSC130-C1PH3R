@@ -1,15 +1,19 @@
 extends layout
-block content 
+block content
+    div(class="container-form")
         body(onload="start()")
-                h2(class="game") Game
-                p(id="score")
-                p Which cipher is this?
-                p(id="unencryptStr")
-                p(id="question text")
+            h2(class="game") Game
+            p(id="score")
+            p Which cipher is this?
+            p(id="unencryptStr")
+            p(id="question text")
+            div(class="form-group")
                 select(id="guessInput")
-                        option(value="ROT13") ROT13
-                        option(value="Caesar") Caesar
-                        option(value="Atbash") Atbash
-                button(id="guessButton" onclick="guess()") Guess
-                script 
-                        include ../public/game.js
+                    option(value="ROT13") ROT13
+                    option(value="Caesar") Caesar
+                    option(value="Atbash") Atbash
+                i(class="bar")
+            div(class="button-container")
+                button(class="button" id="guessButton" onclick="guess()") Guess
+            script
+                include ../public/game.js
