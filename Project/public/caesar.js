@@ -3,79 +3,81 @@ const fullAlphabet = alphabet + alphabet + alphabet;
 
 
 const encrypB = document.getElementById("encrypt");
-encrypB.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  document.getElementById("bottom-cipher").value = '';
+encrypB.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    document.getElementById("bottom-cipher").value = '';
 
-  const encripChipher = document.getElementById("decipher_caesar_text").value;
-  const offset = document.getElementById("offset").value;
+    const encripChipher = document.getElementById("decipher_caesar_text").value;
+    const offset = document.getElementById("offset").value;
 
-  for(i = 0; i < encripChipher.length; i++) {
-    const letters = encripChipher[i]; 
-    const position = alphabet.indexOf(letters);
+    for (i = 0; i < encripChipher.length; i++) {
+        const letters = encripChipher[i];
+        const position = alphabet.indexOf(letters);
 
-    if(position == -1) {
-      document.getElementById("bottom-cipher").value += letters;
-    } else {
-      const nextPosition = position + offset % 26;
-      const nextLetter = fullAlphabet[nextPosition];
+        if (position == -1) {
+            document.getElementById("bottom-cipher").value += letters;
+        } else {
+            const nextPosition = position + offset % 26;
+            const nextLetter = fullAlphabet[nextPosition];
 
-      document.getElementById("bottom-cipher").value += nextLetter;
+            document.getElementById("bottom-cipher").value += nextLetter;
+        }
     }
-   }
 });
 
 const decryptB = document.getElementById('decrypt');
-decryptB.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  document.getElementById("decipher_caesar_text").value = '';
+decryptB.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    document.getElementById("decipher_caesar_text").value = '';
 
-  const decryptCipher = document.getElementById("bottom-cipher").value;
-  const set = document.getElementById("offset").value;
+    const decryptCipher = document.getElementById("bottom-cipher").value;
+    const set = document.getElementById("offset").value;
 
-  for(i = 0; i < decryptCipher.length; i++) {
-    const letter = decryptCipher[i];
-    const index = alphabet.indexOf(letter);
-  
-    if(index <= -1) {
-      document.getElementById("decipher_caesar_text").value += letter;
-    } else {
-      const nextIndex = index - set % 26;
-      const nextLetters = fullAlphabet[nextIndex];
+    let result;
+    for (i = 0; i < decryptCipher.length; i++) {
+        const letter = decryptCipher[i];
+        const index = alphabet.indexOf(letter);
+        if (index <= -1) {
+            result += letter;
+        } else {
+            const nextIndex = index - set % 26;
+            const nextLetters = fullAlphabet[nextIndex];
 
-      document.getElementById("decipher_caesar_text").value += nextLetters;
+            result += nextLetters;
+        }
     }
-  }
+
+  document.getElementById("decipher_caesar_text").value = "";
+    document.getElementById("decipher_caesar_text").value = result;
 });
 
 
 const saveB = document.getElementById("save");
-saveB.addEventListener("click", function(evt) {
-  evt.preventDefault();
+saveB.addEventListener("click", function (evt) {
+    evt.preventDefault();
 
-  const encryptText = document.getElementById("decipher_caesar_text").value;
-  const offSet = document.getElementById("offset").value;
-  const decryptText = document.getElementById("bottom-cipher").value;
+    const encryptText = document.getElementById("decipher_caesar_text").value;
+    const offSet = document.getElementById("offset").value;
+    const decryptText = document.getElementById("bottom-cipher").value;
 
-  let data = 'Plain Text: ' + encryptText + ' \r\n' + 
-  'Offset: ' + offSet + ' \r\n' + 
-  'Coded Text: ' + decryptText;
+    let data = 'Plain Text: ' + encryptText + ' \r\n' +
+        'Offset: ' + offSet + ' \r\n' +
+        'Coded Text: ' + decryptText;
 
-  // const path = 'OffsetFiles/EncryptFiles/' + offSet + '.txt';
-  const my_file = new Blob([data], { type: "text/plain;charset=utf-8" });
-  const fileName = 'C1PH3R-with-off-set-' +offSet +'.txt';
+    // const path = 'OffsetFiles/EncryptFiles/' + offSet + '.txt';
+    const my_file = new Blob([data], {type: "text/plain;charset=utf-8"});
+    const fileName = 'C1PH3R-with-off-set-' + offSet + '.txt';
 
-  let newLink = document.createElement("a");
+    let newLink = document.createElement("a");
 
-  newLink.download = fileName;
+    newLink.download = fileName;
 
-  if (window.webkitURL != null) {
-    newLink.href = window.webkitURL.createObjectURL(my_file);
-  }
-  else {
-    newLink.href = window.URL.createObjectURL(my_file);
-    newLink.style.display = "none";
-    document.body.appendChild(newLink);
-  }
-  newLink.click();
+    if (window.webkitURL != null) {
+        newLink.href = window.webkitURL.createObjectURL(my_file);
+    } else {
+        newLink.href = window.URL.createObjectURL(my_file);
+        newLink.style.display = "none";
+        document.body.appendChild(newLink);
+    }
+    newLink.click();
 });
